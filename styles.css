@@ -36,8 +36,9 @@ input[type=text] {
   padding: 7px;
   background: #282c34;
   color: white;
-  border: 1px solid grey;
+  border: 1px solid #282c34;
   border-left: none;
+  outline: none;
   cursor: pointer;
 }
 
