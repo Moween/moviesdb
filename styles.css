@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #282c34;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#h01 {
+  color: #282c34;
+  margin: 10px 15px 10px;
+  
+}
+
+input[type=text] {
+  padding: 7px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+#submit-btn {
+  float: left;
+  width: 20%;
+  padding: 7px;
+  background: #282c34;
+  color: white;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background: #282c34;
+}
+
+#form {
+  margin-right: 15px; 
+}
+#form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+}
+
+.poster-container {
+  width: 45%; 
+}
+
+.poster {
+  max-width: 100%; 
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+
+.title-overview-wrapper {
+  width: 55%;
+  padding: 5px 0;
+}
+
+.movie-title {
+  margin: 10px 0 0;
+  padding-left: 5px;
+}
+
+.para {
+  line-height: 1.25rem;
+  padding: 0 5px 15px;
+}
+
+
+
+.read-more-link   {
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 10px;
+  color: blue;
+}
+
+footer {
+  background-color: white;
+  color: #282c34;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .flex-item {
+    width: 100%;
+    display: block;
+  }
+
+  .poster-container {
+    width: 100%;
+  }
+
+  .title-overview-wrapper {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .movie-title {
+    margin: 0 0 5px;
+    padding: 0 5px;
+  }
+  
+  .para {
+    line-height: 1.25rem;
+    padding: 0 5px 15px;
+  }
+  
+  
+  
+  .read-more-link   {
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    color: blue;
+  }
+}
+
