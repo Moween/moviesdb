@@ -30,7 +30,7 @@ input[type=text] {
   background: white;
 }
 
-#submit-btn {
+#search-btn {
   float: left;
   width: 20%;
   padding: 7px;
@@ -42,7 +42,7 @@ input[type=text] {
   cursor: pointer;
 }
 
-#submit-btn:hover {
+#search-btn:hover {
   background: #282c34;
 }
 
