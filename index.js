@@ -56,11 +56,9 @@ const fetchApi = async (url) => {
 
 fetchApi(MOVIES_URL)
   .then(data => {
-  console.log(data.results);
-  data.results.forEach(movie => {
-    console.log(movie);
-    let newMovie = new Movie(movie);
-    main.append(newMovie.card)
+    data.results.forEach(movie => {
+      let newMovie = new Movie(movie);
+      main.append(newMovie.card)
     })
   })
   .catch(err => {
